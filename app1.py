@@ -1298,7 +1298,7 @@ date_range = st.sidebar.date_input(
     value=(min_date, max_date),
     min_value=min_date,
     max_value=max_date_widget,
-    key='date_range'
+    key=f"date_range_{city_df}"
 )
 
 # Когда пользователь кликнул только 1-ю дату (ещё не выбрал вторую) —
