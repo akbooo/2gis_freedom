@@ -1276,7 +1276,7 @@ st.sidebar.markdown("---")
 # ── Период ────────────────────────────────────────────────
 import datetime as _dt
 
-df['дата'] = pd.to_datetime(df['дата'], errors='coerce')
+df['дата'] = pd.to_datetime(df['дата'], format='%d.%m.%Y', errors='coerce')
 min_date = df['дата'].min().date()
 max_date = df['дата'].max().date()
 
